@@ -1,0 +1,82 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build debug",
+            "type": "process",
+            "command": "make",
+            "args": [
+                "PLATFORM=PLATFORM_DESKTOP",
+                "BUILD_MODE=DEBUG",
+                "PROJECT_NAME=game"
+            ],
+            "windows": {
+                "command": "mingw32-make.exe",
+                "args": [
+                    "PLATFORM=PLATFORM_DESKTOP",
+                    "BUILD_MODE=DEBUG",
+                    "PROJECT_NAME=game",
+                    "RAYLIB_PATH=C:/raylib/raylib"
+                ]
+            },
+            "osx": {
+                "args": [
+                    "PLATFORM=PLATFORM_DESKTOP",
+                    "BUILD_MODE=DEBUG",
+                    "PROJECT_NAME=game",
+                    "RAYLIB_PATH=<path_to_raylib>/raylib"
+                ]
+            },
+            "linux": {
+                "args": [
+                    "PLATFORM=PLATFORM_DESKTOP",
+                    "BUILD_MODE=DEBUG",
+                    "PROJECT_NAME=game",
+                    "RAYLIB_PATH=<path_to_raylib>/raylib"
+                ]
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"]
+        },
+        {
+            "label": "build release",
+            "type": "process",
+            "command": "make",
+            "args": [
+                "PLATFORM=PLATFORM_DESKTOP",
+                "BUILD_MODE=RELEASE",
+                "PROJECT_NAME=game"
+            ],
+            "windows": {
+                "command": "mingw32-make.exe",
+                "args": [
+                    "PLATFORM=PLATFORM_DESKTOP",
+                    "BUILD_MODE=RELEASE",
+                    "PROJECT_NAME=game",
+                    "RAYLIB_PATH=C:/raylib/raylib"
+                ]
+            },
+            "osx": {
+                "args": [
+                    "PLATFORM=PLATFORM_DESKTOP",
+                    "BUILD_MODE=RELEASE",
+                    "PROJECT_NAME=game",
+                    "RAYLIB_PATH=<path_to_raylib>/raylib"
+                ]
+            },
+            "linux": {
+                "args": [
+                    "PLATFORM=PLATFORM_DESKTOP",
+                    "BUILD_MODE=RELEASE",
+                    "PROJECT_NAME=game",
+                    "RAYLIB_PATH=<path_to_raylib>/raylib"
+                ]
+            },
+            "group": "build",
+            "problemMatcher": ["$gcc"]
+        }
+    ]
+}

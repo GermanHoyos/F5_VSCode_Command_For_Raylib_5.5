@@ -1,0 +1,17 @@
+# Compiled binaries
+*.exe
+*.o
+
+# Build artifacts
+game
+main
+
+# VSCode workspace file 
+*.code-workspace
+
+# OS/system files
+.DS_Store
+Thumbs.db
+
+# This folder isnt generated but just incase
+build/
