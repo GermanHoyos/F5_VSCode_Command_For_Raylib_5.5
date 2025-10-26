@@ -24,7 +24,7 @@
 .PHONY: all clean
 
 # Define required raylib variables
-PROJECT_NAME       ?= game
+PROJECT_NAME       ?= main
 RAYLIB_VERSION     ?= 5.1-dev
 RAYLIB_PATH        ?= ..\..
 
@@ -69,6 +69,7 @@ ifeq ($(PLATFORM),PLATFORM_DESKTOP)
     # ifeq ($(UNAME),Msys) -> Windows
     ifeq ($(OS),Windows_NT)
         PLATFORM_OS=WINDOWS
+        EXT = .exe
         export PATH := $(COMPILER_PATH):$(PATH)
     else
         UNAMEOS=$(shell uname)
@@ -92,12 +93,14 @@ ifeq ($(PLATFORM),PLATFORM_DESKTOP)
         endif
     endif
 endif
+
 ifeq ($(PLATFORM),PLATFORM_RPI)
     UNAMEOS=$(shell uname)
     ifeq ($(UNAMEOS),Linux)
         PLATFORM_OS=LINUX
     endif
 endif
+
 
 # RAYLIB_PATH adjustment for different platforms.
 # If using GNU make, we can get the full path to the top of the tree. Windows? BSD?

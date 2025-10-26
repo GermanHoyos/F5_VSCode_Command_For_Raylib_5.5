@@ -74,6 +74,7 @@ int main()
     CloseWindow();                  // Close window and OpenGL context
     //--------------------------------------------------------------------------------------
 
+
     return 0;
 }
 
@@ -93,7 +94,7 @@ static void UpdateDrawFrame(void)
 
         BeginMode3D(camera);
 
-            DrawCube(cubePosition, 2.0f, 2.0f, 2.0f, RED);
+            DrawCube(cubePosition, 2.0f, 2.0f, 2.0f, GREEN);
             DrawCubeWires(cubePosition, 2.0f, 2.0f, 2.0f, MAROON);
             DrawGrid(10, 1.0f);
 
