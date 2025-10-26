@@ -94,7 +94,7 @@ static void UpdateDrawFrame(void)
 
         BeginMode3D(camera);
 
-            DrawCube(cubePosition, 2.0f, 2.0f, 2.0f, WHITE);
+            DrawCube(cubePosition, 2.0f, 2.0f, 2.0f, ORANGE);
             DrawCubeWires(cubePosition, 2.0f, 2.0f, 2.0f, MAROON);
             DrawGrid(10, 1.0f);
 

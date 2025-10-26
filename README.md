@@ -39,7 +39,7 @@ Or you can simply run with the runme.bat file! 🚀
 
 ---
 
-# ✅ Changes Made to Support C++:
+# ✅ Changes made to Support C++:
 
 1. **Updated compiler & standards**  
    - Changed to `g++` / `clang++` and set `-std=c++17`  
@@ -63,10 +63,19 @@ Or you can simply run with the runme.bat file! 🚀
 
 ---
 
-# 🚀 Download Raylib 5.5, then download my updates to the VSCode project folder:
+# 🚀 Detailed step by step instructions
 
-1. Clone the repo:
+1. Download raylib (current version as of writting these instructions is 5.5)<br>
 
-```bash
-git clone https://github.com/GermanHoyos/F5_VSCode_Command_For_Raylib_5.5.git
-cd F5_VSCode_Command_For_Raylib_5.5
+2. Clone this repo
+``` git clone https://github.com/GermanHoyos/F5_VSCode_Command_For_Raylib_5.5.git ```
+
+3. In the downloaded Raylib folder from step 1, go into ``` C:\raylib\raylib\projects ```
+
+4. Create a folder (any name will work, IE "MyProj_01")
+
+5. Copy the contents of the cloned repo from step 2 into your "MyProj_01" folder, dont copy the .git
+
+6. Double click the vscode workspace file and then press ``` F5 ``` on your keyboard or type via gut bash ``` ./runme.bat ```
+
+
