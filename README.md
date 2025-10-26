@@ -1,10 +1,35 @@
-# 🎮 F5 VSCode Command for Raylib 5.5 (C++17)
+# 🎮 (C++17) ```"F5"``` or ``` "./runme.bat" ```  VSCode setup for Raylib 5.5 
+Contact german.a.hoyos@gmail.com
 
-Welcome! This is a minimal **VSCode project setup** to quickly compile and run C++ projects using **Raylib 5.5** on desktop platforms (Windows, Linux, macOS). Just press **F5** and go! 🚀
+# 🖥️ How to run with the runme.bat file:
+Type ``` "./runme.bat" ```  in the bash terminal in vscode and enter
+
+# 🖥️ How to run with the F5 command:
+Press ``` "F5" ```  from the bash terminal in vscode
+
+# 📁 Project structure of modified "VSCode" folder
+``` 
+$ tree
+.
+├── Makefile
+├── Makefile.Android
+├── README.md
+├── main.code-workspace
+├── main.cpp
+├── main.exe
+├── main.o
+├── resources
+│   └── LICENSE
+└── runme.bat
+```
+
+# 🎮 Purpose of this repo
+This is a minimal **VSCode project setup** to quickly compile and run C++ projects using **Raylib 5.5** on desktop platforms (Windows, Linux, macOS). Just press **F5** and go! 🚀<br>
+Or you can simply run with the runme.bat file! 🚀
 
 ---
 
-## 🛠 Features
+# 🛠 Features
 
 - Ready-to-use **VSCode configuration** for Raylib C++ projects
 - Preconfigured `tasks.json` and `launch.json` for **debug** & **release**
@@ -14,7 +39,7 @@ Welcome! This is a minimal **VSCode project setup** to quickly compile and run C
 
 ---
 
-## ✅ Changes Made to Support C++:
+# ✅ Changes Made to Support C++:
 
 1. **Updated compiler & standards**  
    - Changed to `g++` / `clang++` and set `-std=c++17`  
@@ -38,7 +63,7 @@ Welcome! This is a minimal **VSCode project setup** to quickly compile and run C
 
 ---
 
-## 🚀 How to Use
+# 🚀 Download Raylib 5.5, then download my updates to the VSCode project folder:
 
 1. Clone the repo:
 
